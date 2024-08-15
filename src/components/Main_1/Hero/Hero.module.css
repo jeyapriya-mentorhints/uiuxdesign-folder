@@ -1,0 +1,102 @@
+.herosec {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 10px;
+}
+.item1 .item2 {
+  margin: 10px auto;
+  width: auto;
+}
+.item1 {
+  background-color: white;
+  border-radius: 10px;
+  font-family: var(--font-primary);
+  padding: 13px;
+}
+.item1 p,
+.uiux {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.item1 p {
+  padding: 10px;
+}
+
+.item1 .uiux {
+  color: var(--blue-color);
+  display: block;
+  margin-bottom: 20px;
+}
+.item1 .data {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.data input {
+  padding: 10px;
+  margin: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.data input::placeholder {
+  font-family: var(--font-primary);
+}
+.item1 button {
+  margin: 10px 20px;
+  padding: 10px 50px;
+  display: block;
+  width: 88%;
+}
+
+.item2 .texts,
+.rate {
+  color: white;
+  text-align: center;
+  font-family: var(--font-primary);
+}
+.texts {
+  font-size: 28px;
+  font-weight: 200;
+  margin: 30px 20px 10px;
+}
+.rate {
+  font-size: 2rem;
+  text-decoration: underline var(--orange-color);
+  text-underline-position: under;
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: 800;
+}
+.item2 .Irate {
+  color: var(--orange-color);
+}
+.benefit {
+  color: var(--blue-color);
+  font-family: var(--font-primary);
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 40px 20px;
+}
+.contains {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contains p {
+  border: 3px solid var(--orange-color);
+  padding: 10px;
+  margin: 20px auto;
+  color: white;
+  font-family: var(--font-primary);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.contains :last-child {
+  margin-top: 0px;
+}

@@ -1,0 +1,138 @@
+.partner {
+  padding: 20px auto;
+  background: white;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.logo-slide {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.image {
+  display: inline-block;
+  animation: 6s slide infinite linear;
+}
+.logo-slide:hover .image {
+  animation-play-state: paused;
+}
+
+.partner .members img {
+  display: grid;
+  place-self: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.partner h1 {
+  text-align: center;
+  color: #006af5;
+  font-size: 23px;
+  margin: 10px;
+  font-weight: 600;
+  word-spacing: 5px;
+  padding: 5px;
+}
+
+.partner .image img {
+  margin: 10px 5px;
+  margin-right: 5px;
+  height: 85px;
+  padding: 10px 20px;
+  justify-content: space-around;
+  place-self: center;
+}
+
+h1 .type {
+  display: inline-block;
+  position: absolute;
+  color: hsla(25, 100%, 52%, 0.925);
+  overflow: hidden;
+  animation: type 3s steps(9) infinite normal both,
+    cursor 0.5s step-end infinite alternate;
+  vertical-align: bottom;
+}
+.type span {
+  position: relative;
+  text-align: left;
+}
+.type span::before {
+  visibility: visible;
+  content: "Mentorship";
+  animation: words 8s infinite;
+}
+.type span::after {
+  visibility: visible;
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-left: 2px solid hsl(25, 100%, 52%);
+  right: 1px;
+  animation: cursor 0.5s infinite, typing 4s steps(9) infinite;
+}
+
+.placeholder {
+  display: inline-block;
+  position: relative;
+}
+.placeholder span {
+  display: inline-block;
+  width: 8ch; /* Same width as .type */
+  visibility: hidden; /* Invisible placeholder */
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes words {
+  0%,
+  50% {
+    content: "Mentorship  ";
+  }
+
+  51%,
+  100% {
+    content: "Training";
+  }
+}
+@keyframes typing {
+  25%,
+  37.5%,
+  75%,
+  87.5% {
+    width: 0;
+  }
+  12.5%,
+  50%,
+  55% {
+    width: calc(100%+2px);
+  }
+}
+
+.partner .members {
+  background: hsla(25, 100%, 52%, 70%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.partner .members img {
+  display: inline-block;
+  margin: auto;
+  height: 200px;
+}
+.partner p {
+  text-align: center;
+  padding: 12px 10px 30px 10px;
+  font-size: 17px;
+  color: #5f5f5fb2;
+  text-indent: 4px;
+  margin: 5px;
+  font-weight: 600;
+}

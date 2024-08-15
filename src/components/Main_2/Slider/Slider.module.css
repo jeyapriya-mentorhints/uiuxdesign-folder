@@ -1,0 +1,44 @@
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  display: grid;
+  place-items: center;
+}
+
+.slider_track {
+  display: flex;
+  width: 115%;
+  animation: scroll 10s linear infinite;
+}
+/*  */
+.slider::before
+.slider::after {
+  content: " ";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

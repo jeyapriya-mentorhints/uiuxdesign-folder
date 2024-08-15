@@ -1,0 +1,25 @@
+#footer {
+  font-weight: 500;
+  border-width: 3px;
+  margin: 15px;
+  padding: 20px;
+  border-top: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 16px;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#footer ul li {
+  padding-top: 20px;
+}
+#footer p {
+  font-weight: 500;
+  padding-top: 20px;
+}

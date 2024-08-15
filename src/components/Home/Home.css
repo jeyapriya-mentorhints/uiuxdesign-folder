@@ -1,0 +1,8 @@
+#navbar .menubar {
+  height: 33px;
+  margin: 10px;
+}
+#navbar .logo {
+  height: 33px;
+  margin: 10px auto;
+}

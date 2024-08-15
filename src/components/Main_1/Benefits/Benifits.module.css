@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.container img {
+  background-color: var(--green-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.container .detail {
+  color: white;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  text-align: left;
+  font-weight: 500;
+  margin-right: 40px;
+}

@@ -1,0 +1,49 @@
+#faq h1 {
+  color: #006af5;
+  font-size: 25px;
+  margin: 30px;
+  text-align: center;
+  padding: 10px;
+  font-family: var(--font-primary);
+}
+.accordion {
+  margin: 10px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion-item {
+  border-radius: 6px;
+  margin: 5px -5px;
+  overflow: hidden;
+}
+.accordion-item-title {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  background: rgba(0, 106, 245, 0.25);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  font-family: var(--font-primary);
+}
+
+.accordion-item-title img {
+  float: right;
+  height: 15px;
+}
+
+.accordion-item-content {
+  font-size: 15px;
+  padding: 1rem;
+  background: rgba(0, 106, 245, 0.19);
+}
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
